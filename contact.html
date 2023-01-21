@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon icon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.jpg" />
+    <!-- font-awesome-icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- styles  -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Introduction site</title>
+  </head>
+  <body>
+    <div class="header">
+      <header class="container nav-bar">
+        <img class="logo" src="/images/logo.png" alt="logo image" />
+        <!-- Desktop -->
+        <ul class="nav-items nav">
+          <li class="nav-item">
+            <a class="nav-item-link" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item-link" href="/blog.html">Blog </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item-link" href="/skills.html">Skills </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item-link" href="/about.html"> About </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item-link" href="/contact.html">Contact </a>
+          </li>
+        </ul>
+        <!-- mobile  -->
+        <ul class="nav-items-mobile nav">
+          <li class="nav-item">
+            <a class="nav-item-link" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item-link" href="/blog.html">Blog </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item-link" href="/skills.html">Skills </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item-link" href="/about.html"> About </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item-link" href="/contact.html">Contact </a>
+          </li>
+        </ul>
+        <div class="nav-buttons">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M3.8,6.6h16.4" />
+            <path d="M20.2,12.1H3.8" />
+            <path d="M3.8,17.5h16.4" />
+          </svg>
+          <div class="close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <section class="container">
+      <ul class="content content-contact" id="stage"></ul>
+      <h1 class="heading">Get In Touch</h1>
+      <form class="contact-form" id="contact-form" action="" name="contact">
+        <div class="input-box">
+          <label class="label label-name" for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            class="input input-name"
+            placeholder="Enter your full name"
+            autocomplete="off"
+            maxlength="10"
+          />
+        </div>
+        <div class="input-box">
+          <label class="label label-email" for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="input input-email"
+            placeholder="Enter your email address"
+            autocomplete="off"
+          />
+        </div>
+        <div class="input-box">
+          <label class="label label-contact" for="contact-no">Contact no</label>
+          <input
+            type="number"
+            id="contact-no"
+            class="input input-contact"
+            placeholder="enter your mobile number"
+            autocomplete="off"
+            onKeyPress="if(this.value.length==10) return false;"
+          />
+        </div>
+        <div class="input-box">
+          <label class="label" for="message">Message</label>
+          <textarea
+            class="input textarea input-message"
+            name="message"
+            id="message"
+            rows="10"
+            placeholder="Enter Message"
+            autocomplete="off"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+        <button type="button" class="btn btn-cancel btn-primary">cancel</button>
+      </form>
+    </section>
+
+    <!-- model -->
+
+    <div class="model-wrapper">
+      <section class="model"></section>
+      <div class="model-inner zoomIn">
+        <span class="btn-cross_model">X</span>
+        <p class="txt_model">
+          Thank you for visiting my site and i look forward to helping you make
+          a great first impression!
+        </p>
+        <div>
+          <button class="btn btn-confirm_model btn-primary">Okay</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="/javascript/jquery.min.js"></script>
+    <script src="/javascript/index.js"></script>
+  </body>
+</html>
