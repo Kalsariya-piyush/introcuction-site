@@ -9,6 +9,12 @@ let patternContactNo = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
 
 // navbar
 
+const hideNav = () => {
+  $('.nav-items-mobile').animate({ height: '0', padding: '0px 20px' });
+  $('.icon').css('display', 'block');
+  $('.close').css('display', 'none');
+};
+
 $('.icon').click(() => {
   $('.nav-items-mobile').animate({ height: '290px', padding: '20px 20px' });
   $('.icon').css('display', 'none');
@@ -16,9 +22,15 @@ $('.icon').click(() => {
 });
 
 $('.close').click(() => {
-  $('.nav-items-mobile').animate({ height: '0', padding: '0px 20px' });
-  $('.icon').css('display', 'block');
-  $('.close').css('display', 'none');
+  hideNav();
+});
+
+$('.main').click(() => {
+  hideNav();
+});
+
+$('.footer').click(() => {
+  hideNav();
 });
 
 // contact page
