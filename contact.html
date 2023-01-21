@@ -71,58 +71,102 @@
         </div>
       </header>
     </div>
+    <div class="main">
+      <section class="container">
+        <ul class="content content-contact" id="stage"></ul>
+        <h1 class="heading">Get In Touch</h1>
+        <form class="contact-form" id="contact-form" action="" name="contact">
+          <div class="input-box">
+            <label class="label label-name" for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              class="input input-name"
+              placeholder="Enter your full name"
+              autocomplete="off"
+              maxlength="10"
+            />
+          </div>
+          <div class="input-box">
+            <label class="label label-email" for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="input input-email"
+              placeholder="Enter your email address"
+              autocomplete="off"
+            />
+          </div>
+          <div class="input-box">
+            <label class="label label-contact" for="contact-no"
+              >Contact no</label
+            >
+            <input
+              type="number"
+              id="contact-no"
+              class="input input-contact"
+              placeholder="enter your mobile number"
+              autocomplete="off"
+              onKeyPress="if(this.value.length==10) return false;"
+            />
+          </div>
+          <div class="input-box">
+            <label class="label" for="message">Message</label>
+            <textarea
+              class="input textarea input-message"
+              name="message"
+              id="message"
+              rows="10"
+              placeholder="Enter Message"
+              autocomplete="off"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send</button>
+          <button type="button" class="btn btn-cancel btn-primary">
+            cancel
+          </button>
+        </form>
+      </section>
+    </div>
 
-    <section class="container">
-      <ul class="content content-contact" id="stage"></ul>
-      <h1 class="heading">Get In Touch</h1>
-      <form class="contact-form" id="contact-form" action="" name="contact">
-        <div class="input-box">
-          <label class="label label-name" for="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            class="input input-name"
-            placeholder="Enter your full name"
-            autocomplete="off"
-            maxlength="10"
-          />
+    <footer class="footer">
+      <div class="inside_footer">
+        <div class="social">
+          <h5 class="heading_footer">Social</h5>
+          <p class="social_ids">
+            <span class="social_icon">
+              <i class="fa-brands fa-square-facebook fa-2xl"></i>
+            </span>
+            <span class="content_footer">Facebook</span>
+          </p>
+          <p class="social_ids">
+            <span class="social_icon">
+              <i class="fa-brands fa-square-instagram fa-2xl"></i>
+            </span>
+            <span class="content_footer">Facebook</span>
+          </p>
+          <p class="social_ids">
+            <span class="social_icon">
+              <i class="fa-brands fa-square-whatsapp fa-2xl"></i>
+            </span>
+            <span class="content_footer">Facebook</span>
+          </p>
         </div>
-        <div class="input-box">
-          <label class="label label-email" for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            class="input input-email"
-            placeholder="Enter your email address"
-            autocomplete="off"
-          />
+        <div class="support">
+          <h5 class="heading_footer">Support</h5>
+          <p class="social_ids">
+            <span class="content_footer">Home</span>
+          </p>
+          <p class="social_ids">
+            <span class="content_footer">About</span>
+          </p>
+          <p class="social_ids">
+            <span class="content_footer">Contact</span>
+          </p>
         </div>
-        <div class="input-box">
-          <label class="label label-contact" for="contact-no">Contact no</label>
-          <input
-            type="number"
-            id="contact-no"
-            class="input input-contact"
-            placeholder="enter your mobile number"
-            autocomplete="off"
-            onKeyPress="if(this.value.length==10) return false;"
-          />
-        </div>
-        <div class="input-box">
-          <label class="label" for="message">Message</label>
-          <textarea
-            class="input textarea input-message"
-            name="message"
-            id="message"
-            rows="10"
-            placeholder="Enter Message"
-            autocomplete="off"
-          ></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send</button>
-        <button type="button" class="btn btn-cancel btn-primary">cancel</button>
-      </form>
-    </section>
+      </div>
+      <p class="copy_right">© 2023 All Rights Reserved by piyush kalsariya.</p>
+    </footer>
 
     <!-- model -->
 
