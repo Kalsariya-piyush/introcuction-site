@@ -29,7 +29,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   background-color: #fff;
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 100;
 }
@@ -314,7 +314,7 @@ body {
 .main {
   min-height: calc(100vh - 415px);
   height: auto;
-  padding-top: 110px;
+  padding-top: 10px;
 }
 
 /* contact  */

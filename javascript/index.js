@@ -126,4 +126,13 @@ $(document).ready(function () {
       $('#stage').append(`<li>${item.content}</li>`);
     });
   });
+  $.getJSON('Data/footer.json', (jd) => {
+    jd.forEach((item) => {
+      $('.edit-name').text(item.title);
+      $('.description').text(item.description);
+      $('.address').text(item.address);
+      $('.email').text(item.email);
+      $('.phone-no').text(item.phoneNo);
+    });
+  });
 });
