@@ -29,7 +29,7 @@ $('.main').click(() => {
   hideNav();
 });
 
-$('.footer').click(() => {
+$('.footer-section').click(() => {
   hideNav();
 });
 
