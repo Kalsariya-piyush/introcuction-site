@@ -1,14 +1,7 @@
 [
   {
     "id": "1",
-    "content": "Welcome to my contact page! We're glad you're here."
-  },
-  {
-    "id": "2",
+    "heading": "Welcome to my contact page! I'm glad you're here.",
     "content": "On my site, you'll find a wealth of resources including tips, sample introduction scripts, and a community forum where you can connect withothers working on their self-introduction skills."
-  },
-  {
-    "id": "3",
-    "content": "If you have any questions or feedback, we'd love to hear from you. You can reach us by filling out the contact form below, or by emailing us at [email protected]. We'll make sure to get back to you as soon as possible."
   }
 ]
