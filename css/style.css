@@ -8,6 +8,11 @@
 body {
   overflow-x: hidden;
 }
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
 /* root variables */
 
 :root {
@@ -314,7 +319,6 @@ body {
 .main {
   min-height: calc(100vh - 415px);
   height: auto;
-  padding-top: 10px;
 }
 
 /* contact  */
@@ -358,14 +362,52 @@ body {
   flex-wrap: wrap;
 }
 
-.content-contact {
-  width: 75%;
+.overlay {
+  background: rgb(0, 0, 0);
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
   padding: 40px 60px !important;
+  z-index: 101;
+}
+
+.content-contact {
   list-style: circle;
-  margin: 30px auto;
-  border: 2px solid #afadad;
-  border-radius: 10px;
   margin-bottom: 50px;
+  background: url(../images/contact_bg.webp);
+  width: 100%;
+  height: 75vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  list-style: none;
+  z-index: 100;
+}
+
+.contact-content_heading {
+  font-size: 40px;
+  color: #fff;
+}
+
+.contact-content_desc {
+  font-size: 18px;
+  width: 75%;
+  text-align: center;
+  margin: 40px auto;
+  color: #687075;
+}
+
+.glass-effect {
+  background: rgba(29, 19, 19, 0.62);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.1px);
+  -webkit-backdrop-filter: blur(12.1px);
+  width: 50%;
+  z-index: 103;
+  text-align: center;
+  padding: 30px 10px;
+  margin: 10px auto;
 }
 
 .content-contact li {
@@ -481,23 +523,21 @@ input[type='number'] {
   -moz-appearance: textfield;
 }
 
-.example {
-  width: 1000px;
-  height: 1000px;
-  background-color: #1d1929;
-}
-
 /* Media queryes */
 
 @media (max-width: 1024px) {
-  .content-contact {
-    width: 90%;
-  }
-
   .footer-top {
     margin-bottom: 50px;
     padding-bottom: 20px;
     border-bottom: 1px solid #afadad;
+  }
+
+  .contact-content_desc {
+    width: 85%;
+  }
+
+  .glass-effect {
+    width: 70%;
   }
 }
 
@@ -506,6 +546,17 @@ input[type='number'] {
     margin-bottom: 50px;
     padding-bottom: 20px;
     border-bottom: 1px solid #afadad;
+  }
+  .contact-content_desc {
+    width: 90%;
+  }
+
+  .glass-effect {
+    width: 90%;
+  }
+
+  .overlay {
+    padding: 40px !important;
   }
 }
 
@@ -597,14 +648,25 @@ input[type='number'] {
     min-width: 100%;
   }
 
-  .content-contact {
-    width: 100%;
-    padding: 30px 40px !important;
-  }
-
   .model-inner {
     width: 375px;
     height: 250px;
+  }
+
+  .contact-content_desc {
+    width: 100%;
+  }
+
+  .glass-effect {
+    width: 100%;
+  }
+
+  .content-contact {
+    height: 85vh;
+  }
+
+  .overlay {
+    padding: 20px !important;
   }
 }
 
@@ -622,6 +684,22 @@ input[type='number'] {
 
   .social {
     margin-bottom: 20px;
+  }
+
+  .contact-content_heading {
+    font-size: 30px;
+  }
+
+  .contact-content_desc {
+    font-size: 16px;
+  }
+
+  .overlay {
+    padding: 20px 10px !important;
+  }
+
+  .glass-effect {
+    margin-top: 0;
   }
 }
 

@@ -13,12 +13,14 @@ const hideNav = () => {
   $('.nav-items-mobile').animate({ height: '0', padding: '0px 20px' });
   $('.icon').css('display', 'block');
   $('.close').css('display', 'none');
+  $('body').removeClass('stop-scrolling');
 };
 
 $('.icon').click(() => {
-  $('.nav-items-mobile').animate({ height: '290px', padding: '20px 20px' });
+  $('.nav-items-mobile').animate({ height: '240px', padding: '20px 20px' });
   $('.icon').css('display', 'none');
   $('.close').css('display', 'block');
+  $('body').addClass('stop-scrolling');
 });
 
 $('.close').click(() => {
@@ -98,6 +100,7 @@ $('#contact-form').submit((event) => {
     patternContactNo.test(contactNoVal)
   ) {
     $('.model-wrapper').css('display', 'block');
+    $('body').addClass('stop-scrolling');
   }
   console.log('>>>>>> ', contactFormData);
 });
@@ -112,10 +115,12 @@ $('.btn-confirm_model').click(() => {
 
 $('.model').click(() => {
   $('.model-wrapper').css('display', 'none');
+  $('body').removeClass('stop-scrolling');
 });
 
 $('.btn-cross_model').click(() => {
   $('.model-wrapper').css('display', 'none');
+  $('body').removeClass('stop-scrolling');
 });
 
 // document
@@ -123,7 +128,8 @@ $('.btn-cross_model').click(() => {
 $(document).ready(function () {
   $.getJSON('Data/contact_content.json', (jd) => {
     jd.forEach((item) => {
-      $('#stage').append(`<li>${item.content}</li>`);
+      $('.contact-content_heading').text(`${item.heading}`);
+      // $('#stage').append(`<li>${item.content}</li>`);
     });
   });
   $.getJSON('Data/footer.json', (jd) => {
@@ -136,3 +142,5 @@ $(document).ready(function () {
     });
   });
 });
+
+// "content": "If you have any questions or feedback, we'd love to hear from you. You can reach us by filling out the contact form below, or by emailing us at [email protected]. We'll make sure to get back to you as soon as possible."
