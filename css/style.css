@@ -30,7 +30,6 @@ body {
 /* header */
 
 .header {
-  background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   background-color: #fff;
   width: 100%;
@@ -244,6 +243,7 @@ body {
   margin-bottom: 40px;
   position: relative;
 }
+
 .footer-widget-heading h3::before {
   content: '';
   position: absolute;
@@ -253,23 +253,28 @@ body {
   width: 50px;
   background: #afadad;
 }
+
 .footer-widget ul li {
   display: inline-block;
   float: left;
   width: 50%;
   margin-bottom: 12px;
 }
+
 .footer-widget ul li a:hover {
   color: #afadad;
 }
+
 .footer-widget ul li a {
   color: #878787;
   text-transform: capitalize;
 }
+
 .subscribe-form {
   position: relative;
   overflow: hidden;
 }
+
 .subscribe-form input {
   width: 100%;
   padding: 14px 28px;
@@ -277,6 +282,7 @@ body {
   border: 1px solid #2e2e2e;
   color: #fff;
 }
+
 .subscribe-form button {
   position: absolute;
   right: 0;
@@ -285,30 +291,37 @@ body {
   border: 1px solid #afadad;
   top: 0;
 }
+
 .subscribe-form button i {
   color: #fff;
   font-size: 22px;
   transform: rotate(-6deg);
 }
+
 .copyright-area {
   background: #000000;
   padding: 25px 0;
 }
+
 .copyright-text p {
   margin: 0;
   font-size: 14px;
   color: #878787;
 }
+
 .copyright-text p a {
   color: #afadad;
 }
+
 .footer-menu li {
   display: inline-block;
   margin-left: 20px;
 }
+
 .footer-menu li:hover a {
   color: #afadad;
 }
+
 .footer-menu li a {
   font-size: 14px;
   color: #878787;
@@ -376,7 +389,7 @@ body {
   margin-bottom: 50px;
   background: url(../images/contact_bg.webp);
   width: 100%;
-  height: 75vh;
+  height: 550px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -408,13 +421,6 @@ body {
   text-align: center;
   padding: 30px 10px;
   margin: 10px auto;
-}
-
-.content-contact li {
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 20px;
-  line-height: 1.5;
 }
 
 .contact-form {
@@ -662,7 +668,7 @@ input[type='number'] {
   }
 
   .content-contact {
-    height: 85vh;
+    height: 600px;
   }
 
   .overlay {

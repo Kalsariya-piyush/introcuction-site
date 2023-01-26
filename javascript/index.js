@@ -129,7 +129,7 @@ $(document).ready(function () {
   $.getJSON('Data/contact_content.json', (jd) => {
     jd.forEach((item) => {
       $('.contact-content_heading').text(`${item.heading}`);
-      // $('#stage').append(`<li>${item.content}</li>`);
+      $('.contact-content_desc').text(`${item.content}`);
     });
   });
   $.getJSON('Data/footer.json', (jd) => {
@@ -142,5 +142,3 @@ $(document).ready(function () {
     });
   });
 });
-
-// "content": "If you have any questions or feedback, we'd love to hear from you. You can reach us by filling out the contact form below, or by emailing us at [email protected]. We'll make sure to get back to you as soon as possible."
