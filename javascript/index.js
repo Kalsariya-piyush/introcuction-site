@@ -102,7 +102,6 @@ $('#contact-form').submit((event) => {
     $('.model-wrapper').css('display', 'block');
     $('body').addClass('stop-scrolling');
   }
-  console.log('>>>>>> ', contactFormData);
 });
 
 $('.btn-cancel').click(() => {

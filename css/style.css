@@ -334,6 +334,31 @@ body {
   height: auto;
 }
 
+/* homepage */
+
+.content-home {
+  list-style: circle;
+  margin-bottom: 50px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.content_home-header {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  width: 100%;
+}
+
+.small-screen-video {
+  display: none;
+}
+
 /* contact  */
 
 .input-box {
@@ -402,12 +427,12 @@ body {
   color: #fff;
 }
 
-.contact-content_desc {
+.content_desc {
   font-size: 18px;
   width: 75%;
   text-align: center;
   margin: 40px auto;
-  color: #687075;
+  color: #a5b5c0;
 }
 
 .glass-effect {
@@ -538,12 +563,20 @@ input[type='number'] {
     border-bottom: 1px solid #afadad;
   }
 
-  .contact-content_desc {
+  .content_desc {
     width: 85%;
   }
 
   .glass-effect {
     width: 70%;
+  }
+
+  .small-screen-video {
+    display: block;
+  }
+
+  .big-screen-video {
+    display: none;
   }
 }
 
@@ -553,7 +586,7 @@ input[type='number'] {
     padding-bottom: 20px;
     border-bottom: 1px solid #afadad;
   }
-  .contact-content_desc {
+  .content_desc {
     width: 90%;
   }
 
@@ -563,6 +596,10 @@ input[type='number'] {
 
   .overlay {
     padding: 40px !important;
+  }
+
+  .content-home {
+    width: 150%;
   }
 }
 
@@ -659,7 +696,7 @@ input[type='number'] {
     height: 250px;
   }
 
-  .contact-content_desc {
+  .content_desc {
     width: 100%;
   }
 
@@ -696,7 +733,7 @@ input[type='number'] {
     font-size: 30px;
   }
 
-  .contact-content_desc {
+  .content_desc {
     font-size: 16px;
   }
 
@@ -706,6 +743,16 @@ input[type='number'] {
 
   .glass-effect {
     margin-top: 0;
+  }
+
+  .content-home {
+    width: 200%;
+  }
+}
+
+@media (max-width: 375px) {
+  .content-home {
+    width: 230%;
   }
 }
 
