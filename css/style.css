@@ -348,15 +348,33 @@ body {
 
 .content_home-header {
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  width: 100%;
+  width: 90%;
 }
 
-.small-screen-video {
-  display: none;
+.bg-video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.video_section {
+  height: 550px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* contact  */
@@ -570,14 +588,6 @@ input[type='number'] {
   .glass-effect {
     width: 70%;
   }
-
-  .small-screen-video {
-    display: block;
-  }
-
-  .big-screen-video {
-    display: none;
-  }
 }
 
 @media (max-width: 768px) {
@@ -705,6 +715,10 @@ input[type='number'] {
   }
 
   .content-contact {
+    height: 600px;
+  }
+
+  .video_section {
     height: 600px;
   }
 
