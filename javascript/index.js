@@ -127,8 +127,10 @@ $('.btn-cross_model').click(() => {
 $(document).ready(function () {
   $.getJSON('Data/contact_content.json', (jd) => {
     jd.forEach((item) => {
-      $('.contact-content_heading').text(`${item.heading}`);
-      $('.contact-content_desc').text(`${item.content}`);
+      $('.contact-content_heading').text(`${item.contact.heading}`);
+      $('.contact-content_desc').text(`${item.contact.content}`);
+      $('.home-content_heading').text(`${item.home.heading}`);
+      $('.content-home_desc').text(`${item.home.content}`);
     });
   });
   $.getJSON('Data/footer.json', (jd) => {

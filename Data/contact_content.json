@@ -1,7 +1,14 @@
 [
   {
-    "id": "1",
-    "heading": "Welcome to my contact page! I'm glad you're here.",
-    "content": "If you have any questions or feedback, we'd love to hear from you. You can reach us by filling out the contact form below, or by emailing us at [email protected]. We'll make sure to get back to you as soon as possible. On my site, you'll find a wealth of resources including tips, sample introduction scripts, and a community forum where you can connect withothers working on their self-introduction skills."
+    "contact": {
+      "id": "1",
+      "heading": "Welcome to my contact page! I'm glad you're here.",
+      "content": "If you have any questions or feedback, we'd love to hear from you. You can reach us by filling out the contact form below, or by emailing us at [email protected]. We'll make sure to get back to you as soon as possible. On my site, you'll find a wealth of resources including tips, sample introduction scripts, and a community forum where you can connect withothers working on their self-introduction skills."
+    },
+    "home": {
+      "id": "2",
+      "heading": "Discover the World of Piyush",
+      "content": " Welcome to my website where you can get to know me and my work. On this site, you'll find information about my background, experience, and accomplishments, as well as a portfolio of my past projects and a blog where I share my thoughts and insights. I hope you enjoy your visit!."
+    }
   }
 ]
