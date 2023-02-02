@@ -7,6 +7,11 @@ let nameVal = $('#name').val();
 let patternEmail = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i;
 let patternContactNo = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
 
+$(document).ready(function () {
+  $('.loader').delay(2000).fadeOut('slow');
+  $('#overlayer').delay(2000).fadeOut('slow');
+});
+
 // navbar
 
 const hideNav = () => {
@@ -125,7 +130,7 @@ $('.btn-cross_model').click(() => {
 // document
 
 $(document).ready(function () {
-  $.getJSON('Data/contact_content.json', (jd) => {
+  $.getJSON('Data/header_content.json', (jd) => {
     jd.forEach((item) => {
       $('.contact-content_heading').text(`${item.contact.heading}`);
       $('.contact-content_desc').text(`${item.contact.content}`);
