@@ -7,37 +7,182 @@ let nameVal = $('#name').val();
 let patternEmail = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i;
 let patternContactNo = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
 
-$(document).ready(function () {
+const headerHtml = `
+<header class="container nav-bar">
+  <img class="logo" src="/images/logo.png" alt="logo image" />
+  <!-- Desktop -->
+  <ul class="nav-items nav">
+    <li class="nav-item">
+      <a class="nav-item-link" href="/index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-item-link" href="/blog.html">Blog </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about.html"> About </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-item-link" href="/contact.html">Contact </a>
+    </li>
+  </ul>
+  <!-- mobile  -->
+  <ul class="nav-items-mobile nav">
+    <li class="nav-item">
+      <a class="nav-item-link" href="/index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-item-link" href="/blog.html">Blog</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about.html"> About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-item-link" href="/contact.html">Contact</a>
+    </li>
+  </ul>
+  <div class="nav-buttons">
+    <svg class="icon" viewBox="0 0 24 24">
+      <path d="M3.8,6.6h16.4" />
+      <path d="M20.2,12.1H3.8" />
+      <path d="M3.8,17.5h16.4" />
+    </svg>
+    <div class="close">
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+  </div>
+</header>
+`;
+
+const footerHtml = `
+      <div class="container">
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 footer-top">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="index.html">
+                    <p class="edit-name"></p>
+                  </a>
+                </div>
+                <div class="footer-text">
+                  <p class="description"></p>
+                </div>
+                <div class="footer-social-icon">
+                  <span>Follow us</span>
+                  <a
+                    href="https://www.facebook.com/piyush.kalsariya.963?mibextid=ZbWKwL"
+                    target="_blank"
+                    ><i class="fab fa-facebook-f fa-lg facebook-bg"></i
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/mr.kalsariya492/"
+                    ><i class="fab fa-instagram fa-lg insta-bg"></i
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/piyush-kalsariya-104a79219/"
+                    ><i class="fab fa-linkedin fa-lg linkedin-bg"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30 footer-links">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Useful Links</h3>
+                </div>
+                <ul>
+                  <li><a href="/index.html">Home</a></li>
+                  <li><a href="/blog.html">Blog</a></li>
+                  <li><a href="/about.html">About us</a></li>
+                  <li><a href="/contact.html">Contact us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="pb-4 mb-30">
+                <div class="single-cta">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="cta-text">
+                    <h4>Find us</h4>
+                    <span class="address"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="pb-4 mb-30">
+                <div class="single-cta">
+                  <i class="fas fa-phone"></i>
+                  <div class="cta-text">
+                    <h4>Call us</h4>
+                    <span class="phone-no"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="pb-4 mb-30">
+                <div class="single-cta">
+                  <i class="far fa-envelope-open"></i>
+                  <div class="cta-text">
+                    <h4>Mail us</h4>
+                    <span class="email"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="text-center text-lg-left">
+              <div class="copyright-text">
+                <p>
+                  Copyright &copy; 2018, All Right Reserved
+                  <a href="#">Piyush</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+`;
+
+// preloader
+
+$(document).ready(() => {
+  $('.header').html(headerHtml);
+  $('.footer-section').html(footerHtml);
   $('.loader').delay(2000).fadeOut('slow');
   $('#overlayer').delay(2000).fadeOut('slow');
-});
 
-// navbar
+  // navbar
 
-const hideNav = () => {
-  $('.nav-items-mobile').animate({ height: '0', padding: '0px 20px' });
-  $('.icon').css('display', 'block');
-  $('.close').css('display', 'none');
-  $('body').removeClass('stop-scrolling');
-};
+  const hideNav = () => {
+    $('.nav-items-mobile').animate({ height: '0', padding: '0px 20px' });
+    $('.icon').css('display', 'block');
+    $('.close').css('display', 'none');
+    $('body').removeClass('stop-scrolling');
+  };
 
-$('.icon').click(() => {
-  $('.nav-items-mobile').animate({ height: '240px', padding: '20px 20px' });
-  $('.icon').css('display', 'none');
-  $('.close').css('display', 'block');
-  $('body').addClass('stop-scrolling');
-});
+  $('.icon').click(() => {
+    $('.nav-items-mobile').animate({ height: '240px', padding: '20px 20px' });
+    $('.icon').css('display', 'none');
+    $('.close').css('display', 'block');
+    $('body').addClass('stop-scrolling');
+  });
 
-$('.close').click(() => {
-  hideNav();
-});
+  $('.close').click(() => {
+    hideNav();
+  });
 
-$('.main').click(() => {
-  hideNav();
-});
+  $('.main').click(() => {
+    hideNav();
+  });
 
-$('.footer-section').click(() => {
-  hideNav();
+  $('.footer-section').click(() => {
+    hideNav();
+  });
 });
 
 // contact page
@@ -145,6 +290,41 @@ $(document).ready(function () {
       $('.address').text(item.address);
       $('.email').text(item.email);
       $('.phone-no').text(item.phoneNo);
+    });
+  });
+
+  $.getJSON('Data/skills.json', (jd) => {
+    jd.forEach((item) => {
+      $('.skills_container').append(`
+      <div class="skill_container">
+        <div class="skill">
+          <div class="skill_left">
+            <img class="skill_img" src=${item.icon} alt="" />
+            <h6 class="skill_name">${item.name}</h6>
+          </div>
+          <div class="down_arrow">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+        <p class="description_skill">${item.description}</p>
+      </div>
+      `);
+    });
+    $('.skill').click(function () {
+      $(this)
+        .parent('.skill_container')
+        .find('.description_skill')
+        .slideToggle();
+      $(this)
+        .parent('.skill_container')
+        .prevAll('.skill_container')
+        .find('.description_skill')
+        .slideUp();
+      $(this)
+        .parent('.skill_container')
+        .nextAll('.skill_container')
+        .find('.description_skill')
+        .slideUp();
     });
   });
 });
