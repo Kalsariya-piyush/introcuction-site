@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "icon": "/images/skills/HTML.png",
+    "name": "HTML",
+    "description": "HTML (HyperText Markup Language) is a markup language used for creating and structuring web content. It allows developers to create web pages using a series of tags and attributes that define the structure and content of the page. HTML is the backbone of all websites, and it works hand-in-hand with other web technologies, such as CSS (Cascading Style Sheets) for styling and layout, and JavaScript for interactivity and dynamic behavior."
+  },
+  {
+    "id": 2,
+    "icon": "/images/skills/css.png",
+    "name": "css",
+    "description": "CSS (Cascading Style Sheets) is a style sheet language used for describing the look and formatting of a document written in HTML. It allows web developers to separate the presentation and content of a web page, making it easier to maintain and update the design of the site. CSS gives web developers control over the layout, colors, fonts, and other design elements of a web page. It can be used to create a wide range of styles, from simple and straightforward to complex and creative designs. CSS can also be used to make a website responsive, meaning that it adjusts to different screen sizes and devices, making it accessible to users on desktop computers, tablets, and smartphones."
+  },
+  {
+    "id": 3,
+    "icon": "/images/skills/javascript.png",
+    "name": "Javascript",
+    "description": "JavaScript is a high-level, dynamic, and interpreted programming language used for creating interactive and dynamic web pages. It is the most widely used scripting language on the web and is an essential tool for web developers.JavaScript is often used in combination with HTML and CSS to create dynamic web pages and applications. It can be written directly in the HTML document using a script tag or in an external file and linked to the HTML document using the src attribute of the script tag."
+  },
+  {
+    "id": 4,
+    "icon": "/images/skills/firebase.png",
+    "name": "Firebase",
+    "description": "Firebase is a platform for mobile and web app development offered by Google. It provides a number of services such as real-time databases, user authentication, hosting, cloud storage, and machine learning APIs, among others. Firebase is popular among developers for its ease of use and versatility, allowing for rapid prototyping and development of full-featured web and mobile apps."
+  },
+  {
+    "id": 5,
+    "icon": "/images/skills/react.png",
+    "name": "React Js",
+    "description": "ReactJS is a JavaScript library for building user interfaces. It works by allowing developers to define components, which are reusable pieces of UI, and manage the state and render logic of these components. When the state of a component changes, React updates the component's render output efficiently, making sure only the parts of the UI that changed are updated. This process is known as 'reconciliation'. React uses a virtual DOM, an in-memory representation of the actual DOM, to update the UI efficiently and avoid unnecessary updates, leading to improved performance. React is used by many companies for building web applications and is known for its fast rendering and versatility."
+  },
+  {
+    "id": 6,
+    "icon": "/images/skills/nextjs.png",
+    "name": "Next Js",
+    "description": "Next.js is a popular React-based framework for building server-rendered, statically generated, and dynamic web applications. It provides a set of features and optimizations out of the box that make it easier to build and deploy performant web apps.Next.js also provides a number of features for optimizing the performance of web applications, such as automatic optimization of images, automatic generation of service workers, and a highly optimized build process. Overall, Next.js provides a fast and efficient way to build web applications and is widely used by many companies for building complex web applications."
+  },
+  {
+    "id": 7,
+    "icon": "/images/skills/github1.png",
+    "name": "Github",
+    "description": "GitHub is a web-based platform that offers version control and collaboration features for software development. It allows developers to store and manage their code, track changes, and collaborate with other developers on projects. GitHub has become a popular platform for open-source projects, as well as a valuable tool for individuals and businesses to manage their code development and version control. It's widely used because of its ease of use, collaboration features, and vast developer community."
+  },
+  {
+    "id": 8,
+    "icon": "/images/skills/jquery.png",
+    "name": "JQuery",
+    "description": "jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, and animation much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript."
+  },
+  {
+    "id": 9,
+    "icon": "/images/skills/bootstrap.jpg",
+    "name": "Bootstrap",
+    "description": "Bootstrap is a free front-end framework for faster and easier web development. It consists of HTML and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript plugins. Bootstrap provides a responsive grid system, pre-styled UI components, and plugins for common use cases to help developers quickly build responsive and mobile-first websites. With its open-source nature, Bootstrap has become one of the most popular front-end frameworks used by developers and designers worldwide."
+  }
+]

@@ -17,59 +17,19 @@
     <!-- styles  -->
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
+
     <title>Introduction site</title>
   </head>
   <body>
+    <!-- preloader -->
     <div id="overlayer"></div>
     <span class="loader">
       <img src="./images/loader.gif" alt="" />
     </span>
-    <div class="header">
-      <header class="container nav-bar">
-        <img class="logo" src="/images/logo.png" alt="logo image" />
-        <!-- Desktop -->
-        <ul class="nav-items nav">
-          <li class="nav-item">
-            <a class="nav-item-link" href="/index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item-link" href="/blog.html">Blog </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item-link" href="/about.html"> About </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item-link" href="/contact.html">Contact </a>
-          </li>
-        </ul>
-        <!-- mobile  -->
-        <ul class="nav-items-mobile nav">
-          <li class="nav-item">
-            <a class="nav-item-link" href="/index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item-link" href="/blog.html">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item-link" href="/about.html"> About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item-link" href="/contact.html">Contact</a>
-          </li>
-        </ul>
-        <div class="nav-buttons">
-          <svg class="icon" viewBox="0 0 24 24">
-            <path d="M3.8,6.6h16.4" />
-            <path d="M20.2,12.1H3.8" />
-            <path d="M3.8,17.5h16.4" />
-          </svg>
-          <div class="close">
-            <i class="fa-solid fa-xmark"></i>
-          </div>
-        </div>
-      </header>
-    </div>
+    <!-- header  -->
+    <div class="header"></div>
 
+    <!-- main section  -->
     <div class="main">
       <section class="video_section">
         <div class="bg-video">
@@ -91,102 +51,18 @@
           <p class="content-home_desc content_desc"></p>
         </div>
       </section>
+
+      <div class="skills container">
+        <div class="skills_body">
+          <h2 class="heading-main">Skills</h2>
+          <h4 class="heading-under_main">What Can I Do ?</h4>
+          <div class="skills_container"></div>
+        </div>
+      </div>
     </div>
 
-    <footer class="footer-section">
-      <div class="container">
-        <div class="footer-content pt-5 pb-5">
-          <div class="row">
-            <div class="col-xl-4 col-lg-4 footer-top">
-              <div class="footer-widget">
-                <div class="footer-logo">
-                  <a href="index.html">
-                    <p class="edit-name"></p>
-                  </a>
-                </div>
-                <div class="footer-text">
-                  <p class="description"></p>
-                </div>
-                <div class="footer-social-icon">
-                  <span>Follow us</span>
-                  <a
-                    href="https://www.facebook.com/piyush.kalsariya.963?mibextid=ZbWKwL"
-                    target="_blank"
-                    ><i class="fab fa-facebook-f fa-lg facebook-bg"></i
-                  ></a>
-                  <a
-                    target="_blank"
-                    href="https://www.instagram.com/mr.kalsariya492/"
-                    ><i class="fab fa-instagram fa-lg insta-bg"></i
-                  ></a>
-                  <a
-                    target="_blank"
-                    href="https://www.linkedin.com/in/piyush-kalsariya-104a79219/"
-                    ><i class="fab fa-linkedin fa-lg linkedin-bg"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 mb-30 footer-links">
-              <div class="footer-widget">
-                <div class="footer-widget-heading">
-                  <h3>Useful Links</h3>
-                </div>
-                <ul>
-                  <li><a href="/index.html">Home</a></li>
-                  <li><a href="#">portfolio</a></li>
-                  <li><a href="/about.html">About us</a></li>
-                  <li><a href="/contact.html">Contact us</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col">
-              <div class="pb-4 mb-30">
-                <div class="single-cta">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <div class="cta-text">
-                    <h4>Find us</h4>
-                    <span class="address"></span>
-                  </div>
-                </div>
-              </div>
-              <div class="pb-4 mb-30">
-                <div class="single-cta">
-                  <i class="fas fa-phone"></i>
-                  <div class="cta-text">
-                    <h4>Call us</h4>
-                    <span class="phone-no"></span>
-                  </div>
-                </div>
-              </div>
-              <div class="pb-4 mb-30">
-                <div class="single-cta">
-                  <i class="far fa-envelope-open"></i>
-                  <div class="cta-text">
-                    <h4>Mail us</h4>
-                    <span class="email"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="copyright-area">
-        <div class="container">
-          <div class="row">
-            <div class="text-center text-lg-left">
-              <div class="copyright-text">
-                <p>
-                  Copyright &copy; 2018, All Right Reserved
-                  <a href="#">Piyush</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <!-- footer section  -->
+    <footer class="footer-section"></footer>
 
     <!-- javascript -->
     <script src="/javascript/jquery.min.js"></script>
