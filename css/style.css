@@ -406,7 +406,7 @@ body {
 }
 
 .skills_body {
-  margin: 100px 0;
+  margin: 100px auto;
 }
 
 .skill_container {
@@ -453,6 +453,19 @@ body {
   margin: 10px auto;
   margin-top: 20px;
   display: none;
+}
+
+/* about  */
+
+.bg-video_about {
+  position: relative;
+}
+
+.overlay_video {
+  background-color: #0a090b;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
 }
 
 /* contact  */
