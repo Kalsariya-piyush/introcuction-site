@@ -52,5 +52,11 @@
     "icon": "/images/skills/bootstrap.jpg",
     "name": "Bootstrap",
     "description": "Bootstrap is a free front-end framework for faster and easier web development. It consists of HTML and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript plugins. Bootstrap provides a responsive grid system, pre-styled UI components, and plugins for common use cases to help developers quickly build responsive and mobile-first websites. With its open-source nature, Bootstrap has become one of the most popular front-end frameworks used by developers and designers worldwide."
+  },
+  {
+    "id": 10,
+    "icon": "/images/skills/tailwind.png",
+    "name": "Tailwind css",
+    "description": "Tailwind CSS is a highly popular, utility-first CSS framework that provides a set of pre-designed CSS classes for quickly building user interfaces. It was released in 2018 and has since gained a large following among front-end developers for its simplicity, speed, and customizable nature. With Tailwind CSS, developers can write efficient and maintainable CSS code without having to write custom CSS from scratch. Tailwind CSS is also designed to be highly performance-optimized, with a focus on keeping the file size small and the generated CSS efficient. This helps to ensure that websites built with Tailwind CSS load quickly, even on slow internet connections."
   }
 ]
