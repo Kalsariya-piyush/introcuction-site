@@ -173,7 +173,7 @@ $(document).ready(() => {
   };
 
   $('.icon').click(() => {
-    $('.nav-items-mobile').animate({ height: '240px', padding: '20px 20px' });
+    $('.nav-items-mobile').animate({ height: '290px', padding: '20px 20px' });
     $('.icon').css('display', 'none');
     $('.close').css('display', 'block');
     $('body').addClass('stop-scrolling');
