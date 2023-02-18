@@ -554,10 +554,21 @@ body {
   z-index: 101;
 }
 
-.content-contact {
+.contact_header {
+  background: url(../images/contact_bg.webp);
+}
+
+.home_header {
+  background: url(../images/home_header.png);
+}
+
+.about_header {
+  background: url(../images/about_header.png);
+}
+
+.header_bg {
   list-style: circle;
   margin-bottom: 50px;
-  background: url(../images/contact_bg.webp);
   width: 100%;
   height: 550px;
   background-position: center;
@@ -567,7 +578,7 @@ body {
   z-index: 100;
 }
 
-.contact-content_heading {
+.header_heading {
   font-size: 40px;
   color: #fff;
 }
@@ -849,7 +860,7 @@ input[type='number'] {
     width: 100%;
   }
 
-  .content-contact {
+  .header_bg {
     height: 600px;
   }
 
@@ -878,7 +889,7 @@ input[type='number'] {
     margin-bottom: 20px;
   }
 
-  .contact-content_heading {
+  .header_heading {
     font-size: 30px;
   }
 

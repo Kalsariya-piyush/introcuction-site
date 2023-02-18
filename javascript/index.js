@@ -334,4 +334,25 @@ $(document).ready(function () {
         .slideUp();
     });
   });
+  $.ajax({
+    type: 'GET',
+    url: '/Data/about.xml',
+    dataType: 'xml',
+    success: function (xml) {
+      $(xml)
+        .find('About')
+        .each(function () {
+          let title = $(this).find('Title').text();
+          let desc1 = $(this).find('desc1').text();
+          let desc2 = $(this).find('desc2').text();
+          let desc3 = $(this).find('desc3').text();
+          let desc4 = $(this).find('desc4').text();
+          $('.title').append(title);
+          $('.desc1').append(desc1);
+          $('.desc2').append(desc2);
+          $('.desc3').append(desc3);
+          $('.desc4').append(desc4);
+        });
+    },
+  });
 });
