@@ -1,0 +1,26 @@
+[
+  {
+    "img": "/images/Projects/netflix.png",
+    "desc": "This is my first netflix clone using react js and tailwind css and I'm excited to see how it turns out! I've been working hard to ensure that the design and functionality are similar to the original Netflix website, while also adding my own personal touch. I hope that this project will help me to improve my skills as a developer and give me a better understanding of how to use React and Tailwind together effectively."
+  },
+  {
+    "img": "/images/Projects/portfolio2.png",
+    "desc": "I chose to use Next.js and Tailwind CSS for this portfolio project because I wanted to showcase my ability to create responsive and performant web applications. With Next.js, I was able to build a server-rendered application that loads quickly and is optimized for search engines. Tailwind CSS made it easy to style the application and ensure that it looks great on any device. I'm excited to share this project and demonstrate my skills to potential employers and clients."
+  },
+  {
+    "img": "/images/Projects/project3.png",
+    "desc": "I am thrilled to have the opportunity to work on my first design demo project for my office boss. I see this as a chance to apply my design skills and learn from the feedback and guidance provided by my boss. I plan to put my best foot forward, paying close attention to the requirements and preferences outlined, while also incorporating my own unique design elements. I'm eager to see how the project will turn out and to use it as a stepping stone for further growth and development in my design career."
+  },
+  {
+    "img": "/images/Projects/project5.png",
+    "desc": "This is my current project for a forest management app that utilizes Next.js, Tailwind CSS, and MongoDB to create a responsive, user-friendly platform for managing forest resources, analyzing data on forest health and sustainability, and facilitating collaboration among stakeholders in the forestry industry."
+  },
+  {
+    "img": "/images/Projects/expense.png",
+    "desc": "This is our company's personal project expense club app tool, developed using Next.js, Tailwind CSS, and Firebase. Theapp is designed to simplify expense management for projectteams, allowing team members to easily track expenses,submit reimbursement requests, and view project budgetreports. With Firebase integration, the app providesreal-time updates and secure data storage, ensuring accuracyand transparency in financial management."
+  },
+  {
+    "img": "/images/Projects/winner_yoga.png",
+    "desc": "This is a yoga website created by me using HTML, CSS, and jQuery, designed to provide users with a serene and engaging online experience. With its responsive design, intuitive navigation, and stunning visuals, the website offers a range of yoga-related resources, including class schedules, instructor bios, instructional videos, and articles on yoga philosophy and practice. Whether you're a seasoned yogi or just starting out, this website has everything you need to deepen your practice and connect with a community of like-minded individuals."
+  }
+]
