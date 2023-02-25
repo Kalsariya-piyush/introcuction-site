@@ -495,9 +495,13 @@ body {
   align-items: center;
   justify-content: center;
   padding: 40px;
-  border-radius: 20px;
+  border-radius: 10px;
   opacity: 0;
   transition: all 0.3s linear;
+}
+
+.main_projects {
+  margin-top: 20px !important;
 }
 
 .porject_overlay_section:hover .overlay_project {
@@ -637,7 +641,8 @@ body {
   width: 75%;
   text-align: center;
   margin: 40px auto;
-  color: #a5b5c0;
+  color: #fff;
+  z-index: 10000;
 }
 
 .glass-effect {
@@ -872,6 +877,12 @@ input[type='number'] {
     border-color: #0e0c14;
   }
 
+  .nav-item-link_active {
+    background-color: #1d1929;
+    color: #fff;
+    border-color: #0e0c14;
+  }
+
   .close {
     display: none;
     cursor: pointer;
@@ -1003,6 +1014,7 @@ input[type='number'] {
     transform: translate3d(10px, 0, 0);
   }
 }
+
 @keyframes shake {
   0%,
   100% {

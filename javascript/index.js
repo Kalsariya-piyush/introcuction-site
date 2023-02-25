@@ -16,9 +16,6 @@ const headerHtml = `
       <a class="nav-item-link" href="/index.html">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-item-link" href="/blog.html">Blog</a>
-    </li>
-    <li class="nav-item">
       <a class="nav-item-link" href="/about.html"> About</a>
     </li>
     <li class="nav-item">
@@ -32,9 +29,6 @@ const headerHtml = `
   <ul class="nav-items-mobile nav">
     <li class="nav-item">
       <a class="nav-item-link" href="/index.html">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-item-link" href="/blog.html">Blog</a>
     </li>
     <li class="nav-item">
       <a class="nav-item-link" href="/about.html"> About</a>
