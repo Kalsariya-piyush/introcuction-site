@@ -334,6 +334,8 @@ $(document).ready(function () {
         .slideUp();
     });
   });
+
+  // about page data
   $.ajax({
     type: 'GET',
     url: '/Data/about.xml',
@@ -353,6 +355,34 @@ $(document).ready(function () {
           $('.desc3').append(desc3);
           $('.desc4').append(desc4);
         });
+    },
+  });
+
+  //projects data throw ajax
+
+  $.ajax({
+    type: 'GET',
+    url: '/Data/projects.json',
+    dataType: 'json',
+    success: function (data) {
+      data.forEach((item) => {
+        $('.projects').append(`
+        <div class="project">
+          <div class="porject_overlay_section">
+            <img
+              class="project_img"
+              src=${item.img}
+              alt=""
+            />
+            <div class="overlay_project">
+              <p>
+                ${item.desc}
+              </p>
+            </div>
+          </div>
+        </div>
+      `);
+      });
     },
   });
 });
