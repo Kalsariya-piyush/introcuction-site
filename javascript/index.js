@@ -16,10 +16,13 @@ const headerHtml = `
       <a class="nav-item-link" href="/index.html">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-item-link" href="/about.html"> About</a>
+      <a class="nav-item-link" href="/about.html">About Me</a>
     </li>
     <li class="nav-item">
       <a class="nav-item-link" href="/projects.html">Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-item-link" href="/privacy.html">Privacy Policy</a>
     </li>
     <li class="nav-item">
       <a class="nav-item-link" href="/contact.html">Contact</a>
@@ -31,10 +34,13 @@ const headerHtml = `
       <a class="nav-item-link" href="/index.html">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-item-link" href="/about.html"> About</a>
+      <a class="nav-item-link" href="/about.html">About Me</a>
     </li>
     <li class="nav-item">
       <a class="nav-item-link" href="/projects.html">Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-item-link" href="/privacy.html">Privacy Policy</a>
     </li>
     <li class="nav-item">
       <a class="nav-item-link" href="/contact.html">Contact</a>
@@ -94,7 +100,7 @@ const footerHtml = `
                 </div>
                 <ul>
                   <li><a href="/index.html">Home</a></li>
-                  <li><a href="/blog.html">Blog</a></li>
+                  <li><a href="/privacy.html">Privacy Policy</a></li>
                   <li><a href="/about.html">About us</a></li>
                   <li><a href="/projects.html">Projects</a></li>
                   <li><a href="/contact.html">Contact us</a></li>
@@ -348,6 +354,23 @@ $(document).ready(function () {
           $('.desc2').append(desc2);
           $('.desc3').append(desc3);
           $('.desc4').append(desc4);
+        });
+    },
+  });
+
+  // privacy page data
+  $.ajax({
+    type: 'GET',
+    url: '/Data/privacy.xml',
+    dataType: 'xml',
+    success: function (xml) {
+      $(xml)
+        .find('Data')
+        .each(function () {
+          let desc = $(this).find('desc').text();
+          $('.privacy').append(`
+            <li class="my-2">${desc}</li>
+          `);
         });
     },
   });
