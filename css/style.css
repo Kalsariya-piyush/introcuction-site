@@ -973,7 +973,6 @@ input[type='number'] {
     width: 200%;
   }
 }
-
 @media (max-width: 375px) {
   .content-home {
     width: 230%;
@@ -981,9 +980,7 @@ input[type='number'] {
 }
 
 /* animations */
-
 /* error  */
-
 .shake {
   -webkit-animation-name: shake;
   animation-name: shake;
@@ -1039,7 +1036,6 @@ input[type='number'] {
 }
 
 /* model  */
-
 .zoomIn {
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;

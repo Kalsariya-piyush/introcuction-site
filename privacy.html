@@ -19,6 +19,29 @@
     <link rel="stylesheet" href="/css/style.css" />
 
     <title>Introduction site</title>
+    <style>
+      .main {
+        margin: 60px auto !important;
+      }
+
+      .privacy {
+        padding: 40px 70px !important;
+      }
+
+      .my-2 {
+        font-size: 18px;
+        font-weight: 500;
+        list-style: decimal;
+        line-height: 40px;
+        margin: 10px auto;
+      }
+
+      @media (max-width: 625px) {
+        .privacy {
+          padding: 30px 40px !important;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- preloader -->
@@ -26,23 +49,18 @@
     <span class="loader">
       <img src="./images/loader.gif" alt="" />
     </span>
-    <!-- main section  -->
-    <div class="projectPage_body">
-      <!-- header  -->
-      <div class="header"></div>
+    <!-- header  -->
+    <div class="header"></div>
 
-      <div class="main">
-        <div class="skills_body main_projects container">
-          <div class="project_section">
-            <h2 class="heading-main">My Projects</h2>
-            <h4 class="heading-under_main">What I've built</h4>
-            <div class="projects"></div>
-          </div>
-        </div>
+    <!-- main body -->
+    <div class="main container">
+      <div class="">
+        <h2 class="heading-main">Privacy & policy</h2>
+        <ul class="intro_section privacy"></ul>
       </div>
-      <!-- footer section  -->
-      <footer class="footer-section"></footer>
     </div>
+    <!-- footer section  -->
+    <footer class="footer-section"></footer>
 
     <!-- javascript -->
     <script src="/javascript/jquery.min.js"></script>

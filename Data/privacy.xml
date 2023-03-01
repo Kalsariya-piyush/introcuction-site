@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<privacy>
+  <Data>
+    <id>1</id>
+    <desc>
+        Your privacy is important to me. It is my policy to respect your privacy regarding any information I may collect from you across our website.
+    </desc>
+  </Data>
+  <Data>
+    <id>2</id>
+    <desc>
+        I only collect personal information that is necessary to fulfill a specific purpose, such as responding to a request or providing a service to you. I do not share your personal information with third-parties, except as required by law or to fulfill a specific purpose you have requested.
+    </desc>
+  </Data>
+  <Data>
+    <id>3</id>
+    <desc>
+        I only retain personal information for as long as necessary to provide you with a requested service or as required by law.
+    </desc>
+  </Data>
+  <Data>
+    <id>4</id>
+    <desc>
+        My website may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites, and cannot accept responsibility or liability for their respective privacy policies.
+    </desc>
+  </Data>
+  <Data>
+    <id>5</id>
+    <desc>
+        Your continued use of My website will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how I handle user data and personal information, please contact us.
+    </desc>
+  </Data>
+</privacy>
