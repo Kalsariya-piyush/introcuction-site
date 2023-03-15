@@ -1,5 +1,4 @@
 // declarations
-
 let emailVal = $('#email').val();
 let contactNoVal = $('#contact-no').val();
 let messageVal = $('#message').val();
@@ -66,7 +65,7 @@ const footerHtml = `
             <div class="col-xl-4 col-lg-4 footer-top">
               <div class="footer-widget">
                 <div class="footer-logo">
-                  <a href="index.html">
+                  <a href="home.html">
                     <p class="edit-name"></p>
                   </a>
                 </div>
@@ -99,7 +98,7 @@ const footerHtml = `
                   <h3>Useful Links</h3>
                 </div>
                 <ul>
-                  <li><a href="/index.html">Home</a></li>
+                  <li><a href="/home.html">Home</a></li>
                   <li><a href="/privacy.html">Privacy Policy</a></li>
                   <li><a href="/about.html">About us</a></li>
                   <li><a href="/projects.html">Projects</a></li>
@@ -156,15 +155,12 @@ const footerHtml = `
 `;
 
 // preloader
-
 $(document).ready(() => {
   $('.header').html(headerHtml);
   $('.footer-section').html(footerHtml);
   $('.loader').delay(2000).fadeOut('slow');
   $('#overlayer').delay(2000).fadeOut('slow');
-
   // navbar
-
   const hideNav = () => {
     $('.nav-items-mobile').animate({ height: '0', padding: '0px 20px' });
     $('.icon').css('display', 'block');
@@ -195,7 +191,6 @@ $(document).ready(() => {
 // contact page
 
 // form validations
-
 const validationRequired = (value, [class1, class2]) => {
   if (value.length < 1) {
     $(class1).addClass('error');
@@ -207,7 +202,6 @@ const validationRequired = (value, [class1, class2]) => {
 };
 
 //get values
-
 $('.input-name').change((e) => {
   nameVal = e.target.value;
   validationRequired(nameVal, ['.input-name', '.label-name']);
@@ -243,12 +237,6 @@ $('#contact-form').submit((event) => {
   validationRequired(nameVal, ['.input-name', '.label-name']);
   validationRequired(emailVal, ['.input-email', '.label-email']);
   validationRequired(contactNoVal, ['.input-contact', '.label-contact']);
-  const contactFormData = {
-    name: nameVal,
-    email: emailVal,
-    contact: contactNoVal,
-    message: messageVal,
-  };
   if (
     nameVal &&
     emailVal &&
@@ -279,9 +267,9 @@ $('.btn-cross_model').click(() => {
   $('body').removeClass('stop-scrolling');
 });
 
-// document
-
+// Data load
 $(document).ready(function () {
+  // header data load
   $.getJSON('Data/header_content.json', (jd) => {
     jd.forEach((item) => {
       $('.contact-content_heading').text(`${item.contact.heading}`);
@@ -290,6 +278,7 @@ $(document).ready(function () {
       $('.content-home_desc').text(`${item.home.content}`);
     });
   });
+  // footer data load
   $.getJSON('Data/footer.json', (jd) => {
     jd.forEach((item) => {
       $('.edit-name').text(item.title);
@@ -299,7 +288,7 @@ $(document).ready(function () {
       $('.phone-no').text(item.phoneNo);
     });
   });
-
+  // skills data load
   $.getJSON('Data/skills.json', (jd) => {
     jd.forEach((item) => {
       $('.skills_container').append(`
@@ -335,7 +324,7 @@ $(document).ready(function () {
     });
   });
 
-  // about page data
+  // about page data load
   $.ajax({
     type: 'GET',
     url: '/Data/about.xml',
@@ -358,7 +347,7 @@ $(document).ready(function () {
     },
   });
 
-  // privacy page data
+  // privacy page data load
   $.ajax({
     type: 'GET',
     url: '/Data/privacy.xml',
@@ -376,7 +365,6 @@ $(document).ready(function () {
   });
 
   //projects data throw ajax
-
   $.ajax({
     type: 'GET',
     url: '/Data/projects.json',
