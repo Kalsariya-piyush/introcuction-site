@@ -1,69 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- favicon icon -->
-    <link rel="icon" type="image/x-icon" href="/images/favicon.jpg" />
-    <!-- font-awesome-icons  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- styles  -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/style.css" />
 
-    <title>Introduction site</title>
-    <style>
-      .main {
-        margin: 60px auto !important;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon icon -->
+  <link rel="icon" type="image/x-icon" href="/images/favicon.jpg" />
+  <!-- font-awesome-icons  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- styles  -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <title>Introduction site</title>
+  <style>
+    .main {
+      margin: 60px auto !important;
+    }
 
+    .privacy {
+      padding: 40px 70px !important;
+    }
+
+    .my-2 {
+      font-size: 18px;
+      font-weight: 500;
+      list-style: decimal;
+      line-height: 40px;
+      margin: 10px auto;
+    }
+
+    @media (max-width: 625px) {
       .privacy {
-        padding: 40px 70px !important;
+        padding: 30px 40px !important;
       }
+    }
+  </style>
+</head>
 
-      .my-2 {
-        font-size: 18px;
-        font-weight: 500;
-        list-style: decimal;
-        line-height: 40px;
-        margin: 10px auto;
-      }
+<body>
+  <!-- preloader -->
+  <div id="overlayer"></div>
+  <span class="loader">
+    <img src="./images/loader.gif" alt="" />
+  </span>
+  <!-- header  -->
+  <div class="header"></div>
 
-      @media (max-width: 625px) {
-        .privacy {
-          padding: 30px 40px !important;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <!-- preloader -->
-    <div id="overlayer"></div>
-    <span class="loader">
-      <img src="./images/loader.gif" alt="" />
-    </span>
-    <!-- header  -->
-    <div class="header"></div>
-
-    <!-- main body -->
-    <div class="main container">
-      <div class="">
-        <h2 class="heading-main">Privacy & policy</h2>
-        <ul class="intro_section privacy"></ul>
-      </div>
+  <!-- main body -->
+  <div class="main container">
+    <div class="">
+      <h2 class="heading-main">Privacy & policy</h2>
+      <ul class="intro_section privacy"></ul>
     </div>
-    <!-- footer section  -->
-    <footer class="footer-section"></footer>
+  </div>
+  <!-- footer section  -->
+  <footer class="footer-section"></footer>
 
-    <!-- javascript -->
-    <script src="/javascript/jquery.min.js"></script>
-    <script src="/javascript/index.js"></script>
-  </body>
+  <!-- javascript -->
+  <script src="/javascript/jquery.min.js"></script>
+  <script src="/javascript/index.js"></script>
+</body>
+
 </html>
